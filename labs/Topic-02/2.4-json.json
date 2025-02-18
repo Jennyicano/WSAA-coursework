@@ -2,11 +2,11 @@
     "employees": [
         {
             "firstName": "John",
-            "lastName": "Doe",
+            "lastName": "Doe"
         },
         {
             "firstName": "Anna",
-            "lastName": "Smith",
+            "lastName": "Smith"
         },
         {
             "firstName": "Peter",

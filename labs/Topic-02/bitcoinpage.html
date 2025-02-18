@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>bit coin price</title>
+    </head>
+    <body>
+        <h3>The current bitcoin price in USD</h3>
+        <p id="bitcoinprice">price will go here</p>
+        <script>
+            theUrl = "https://api.coindesk.com/v1/bpi/currentprice.json"
+            var xhr = new XMLHttpRequest();
+            xhr.open( "GET", theUrl, true ); // false for synchronous request
+            xhr.responseType = 'json';
+            xhr.onload = function() {
+                data= xhr.response
+                
+                document.getElementById("bitcoinprice").innerHTML = data.bpi.USD.rate
+            }
+    
+            xhr.send( null );
+            
+
+        </script>
+    </body>
+</html>

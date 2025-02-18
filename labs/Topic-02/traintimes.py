@@ -17,7 +17,16 @@ print (doc.toprettyxml()) # output to console comment this out once you know it 
 # to store the xml in a file
 with open("trains.xml", "w") as xmlfp:
     doc.writexml(xmlfp)
-    
+
+# make an array called retrieveTags that will store all the names of the tags that we want to retrieve.  
+retrieveTags=['TrainStatus',
+              'TrainLatitude',
+              'TrainLongitude',
+              'TrainCode',
+              'TrainDate',
+              'PublicMessage',
+              'Direction'
+              ]
 # Modify the program to print out each of the trainscodes.
     # objTrainPositionsNodes = doc.getElementsByTagName("objTrainPositions")
     # for objTrainPositionsNode in objTrainPositionsNodes:
@@ -33,7 +42,7 @@ with  open('week02_train.csv', mode='w', newline='') as train_file:
     objTrainPositionsNodes = doc.getElementsByTagName("objTrainPositions")
     for objTrainPositionsNode in objTrainPositionsNodes:
         
-        # now put everything in a list
+# get everything in a list
         dataList = []
         for retrieveTag in retrieveTags:
             datanode = objTrainPositionsNode.getElementsByTagName(retrieveTag).item(0)
@@ -41,3 +50,8 @@ with  open('week02_train.csv', mode='w', newline='') as train_file:
         
         # write the list to the csv file
         train_writer.writerow(dataList)
+        
+# Store only the trains whose TrainCode starts with a D
+        if dataList[3].startswith('D'):
+            print(dataList)
+            train_writer.writerow(dataList)
