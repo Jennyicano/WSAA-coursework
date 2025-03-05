@@ -1,7 +1,7 @@
 # Module WSAA ATU Galway, Lecture Andrew Beatty
 # Author: Jennifer Ibanez
 
-# Assignment 3: Card Draw
+# Assignment 3: "exchequer account (historical series)"
 # Write a program that retrieves the dataset for the "exchequer account (historical series)" 
 # from the CSO, and stores it into a file called "cso.json".
 
