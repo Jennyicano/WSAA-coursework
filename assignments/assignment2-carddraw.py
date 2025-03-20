@@ -15,7 +15,7 @@ response = requests.get(url)
 data = response.json()
 print(data) # To check it works and it's doing the shuffle
 # Store data in a json file
-with open ("deck.json", "w") as fp:
+with open ("data/deck.json", "w") as fp:
     json.dump(data, fp)
 
 # I'll print the deck_id to check it works
@@ -29,7 +29,7 @@ data = response.json()
 print(data) # To check it works and it's drawing the cards
 
 # Store data in a json file
-with open ("cards.json", "w") as fp:
+with open ("data/cards.json", "w") as fp:
     json.dump(data, fp)
 
 # If the user has drawn a pair, triple, straight, or all of the same suit congratulate the user.

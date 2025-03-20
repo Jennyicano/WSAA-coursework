@@ -11,18 +11,16 @@ import json
 url = "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/FIQ02/JSON-stat/2.0/en"
 response = requests.get(url)
 
-# Check if the request was successful
+# Check if the request was successful and 
+# save the file cso.json in the folder data
+
 if response.status_code == 200:
     data = response.json()
-    print("Data retrieved successfully")
+with open("data/cso.json", "w") as fp:
+        json.dump(data, fp)
+        print("Data written to cso.json")
 
-    def get_all():
-        with open("cso.json", "w") as fp:
-            json.dump(data, fp)
-            print("Data written to cso.json")
-            return data
 
-    get_all()
-else:
-    print(f"Failed to retrieve data. Status code: {response.status_code}")
+
+    
     
