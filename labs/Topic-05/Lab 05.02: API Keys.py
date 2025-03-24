@@ -4,15 +4,16 @@
 
 import requests
 import urllib.parse
+import json
 from config import apikeys as cfj
 
 targetUrl = "https://en.wikipedia.org"
 
-apiKey = cfj["html2pdf"]
+apiKeys = cfj["html2pdf"]
 
 apiurl = 'https://api.html2pdf.app/v1/generate'
 
-params = {'html': targetUrl,'apiKey': apiKey}
+params = {'html': targetUrl,'apiKey': apiKeys}
 parsedparams = urllib.parse.urlencode(params)
 
 requestUrl = apiurl +"?" + parsedparams
