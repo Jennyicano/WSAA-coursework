@@ -3,7 +3,7 @@
 import mysql.connector
 
 # Connect to the database
-mydb = mysqul.connector.connect(
+mydb = mysql.connector.connect(
     host="localhost",
     user="????",
     password="????",

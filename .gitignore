@@ -228,3 +228,7 @@ $RECYCLE.BIN/
 *.lnk
 
 config.py
+
+
+# mysql database files
+dbconfig.py
