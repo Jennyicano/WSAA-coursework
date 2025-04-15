@@ -76,10 +76,11 @@ maximo = max(values, key=values.count)
 # I'll give the value maximo to the card value that appears the most in the list
 print("max.count", values.count(maximo))
 print("maximo", maximo)
+
 if values.count(maximo) == 4:
-    print("Congratulations you have 4 cards with the same value")
+    print("Congratulations you got four of a kind, nice hand")
 elif values.count(maximo) == 3:
-    print("Congratulations you have 3 cards with the same value ", maximo)
+    print("Congratulations you got three of a kind", maximo)
     check_other_pair=True # I'll check if there is a second pair in the list
 elif values.count(maximo) == 2:
     print("Congratulations you have a pair, the value is ", maximo)
@@ -104,9 +105,11 @@ if check_other_pair:
 # I'll create a dictionary with the values of the cards, giving the name of the cards as Jack, Queen, King and Ace
 # the values 11, 12, 13 and 1 respectively.
 values_dict = {"2":2,"3":3,"4":4,"5":5,"6":6,"7":7,"8":8,"9":9,"10":10,"JACK":11,"QUEEN":12,"KING":13,"ACE":1}
+
 # I'll create a list with the values of the cards
 values_list = [values_dict[value] for value in values]
 values_list.sort()
+
 # Congratulate the user if the values of the cards are consecutive and have a straight
 if values_list == list(range(values_list[0], values_list[-1]+1)):
     print("Congratulations you have a straight")

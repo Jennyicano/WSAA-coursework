@@ -16,9 +16,19 @@ First assignment [Card_draw](https://github.com/Jennyicano/WSAA-coursework/blob/
 
 - Using the API [Deck of Cards](https://deckofcardsapi.com/) write a program that "deals" (print out) 5 cards. 
 - This program will shuffle the cards, getting the deck ID, and it'll print the value and the suit of each card. 
-- Additionally the program will congratulate the user, if this one has drawn a pair, a triple, a straight, or all of the same suit. 
+- Additionally the program will congratulate the user, if this one has drawn a pair, a triple, a straight, or all of the same suit. In case the user didn't get a cool hand the program will said to try again. The program will also let the user know what their highest card is. 
 
 - To get more information about the poker hand cards I checked the [888.poker web](https://www.888poker.com/how-to-play-poker/hands/straight-poker-hand-ranking/)
+- Checking some errors with the function count() that I encounter [simplilearn](https://www.simplilearn.com/tutorials/python-tutorial/count-in-python)
+
+Second assignment [cso](https://github.com/Jennyicano/WSAA-coursework/blob/main/assignments/assignment03-cso.py): 
+
+- Write a program that retrieves the dataset for the "exchequer account (historical series)" from the CSO, and stores it into a file called "cso.json".
+- The dataset is in the [CSO.ie](https://data.cso.ie)
+
+
+
+
 
 
 

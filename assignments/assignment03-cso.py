@@ -20,7 +20,3 @@ with open("data/cso.json", "w") as fp:
         json.dump(data, fp)
         print("Data written to cso.json")
 
-
-
-    
-    

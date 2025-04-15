@@ -12,8 +12,8 @@ app = Flask(__name__)
 def index():
         return "Hello world"
     
-# getall
-# curl http://127.0.0.1:5000/books
+#getall
+#curl http://127.0.0.1:5000/books
 
 @app.route('/books', methods=['GET'])
 def getall():
