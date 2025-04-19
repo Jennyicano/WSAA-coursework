@@ -15,7 +15,7 @@ from config import apikeys as cfj
 # m(you could make a private one just for this if you wish). 
 # Put a file in the repository called test.txt
 
-# Apykey 
+# Apikeys 
 apikeys = cfj["githubkey"]
 g = Github(apikeys)
 
@@ -51,3 +51,11 @@ print(gitHubResponse)
 save = open("data/test.txt", "w")
 save.write(newContents)
 save.close()
+
+# References:
+# Python's Requests (https://realpython.com/python-requests/)
+# To get the API key (https://html2pdf.app/documentation/)
+# GitHub REST API documentation (https://docs.github.com/en/rest?apiVersion=2022-11-28)
+# Pygithub (https://pygithub.readthedocs.io/en/latest/introduction.html)
+# For help with ModuleNotFoundError: No module named 'github' 
+#   in StackOverflow (https://stackoverflow.com/questions/72652542/modulenotfounderror-no-module-named-github)

@@ -20,3 +20,8 @@ with open("data/cso.json", "w") as fp:
         json.dump(data, fp)
         print("Data written to cso.json")
 
+
+# References:
+# Python's Requests (https://realpython.com/python-requests/)
+# HTTP response status codes (https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+# HTTP general information (https://www.jmarshall.com/easy/http/)

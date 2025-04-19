@@ -115,4 +115,9 @@ if values_list == list(range(values_list[0], values_list[-1]+1)):
     print("Congratulations you have a straight")
 
 
-   
+# References:
+# To get more information about the poker hand cards 
+#   888.poker web (https://www.888poker.com/how-to-play-poker/hands/straight-poker-hand-ranking/)
+# Checking some errors with the function count() that I encounter 
+#   simplilearn (https://www.simplilearn.com/tutorials/python-tutorial/count-in-python)
+# Python's Requests (https://realpython.com/python-requests/)
